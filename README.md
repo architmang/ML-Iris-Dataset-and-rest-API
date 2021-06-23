@@ -43,7 +43,8 @@ Now ,I imported the metrics module from sklearn and calculated accuracy_score wh
 
 Now to visualize the data I imported the seaborn library.
  
-sns.relplot(x="sepal length",y='Class',data=df,kind="scatter",size="sepal width")     sns.relplot(x="petal length",y='Class',data=df,kind="scatter",hue="sepal length",size="petal width")
+sns.relplot(x="sepal length",y='Class',data=df,kind="scatter",size="sepal width")     
+sns.relplot(x="petal length",y='Class',data=df,kind="scatter",hue="sepal length",size="petal width")
 
 I plotted two scatter plots - first was of class against sepal length with size as sepal width which means that the points in the plot will be scattered according to the correlation of sepal length of flowers belonging to a specific class with the size of the scatter dots proportional to the sepal width of flower. Similarly , in the second scatter plot where I added the 'hue' attribute which controls the shade of the scatter dots in the plot. The scatter plot reveal that 'Iris-setosa' can be clearly demarcated from the rest two species on the basis of petal length but not sepal length.
 
